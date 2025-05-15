@@ -1,0 +1,117 @@
+.my-city {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.my-city h1,
+.my-city h2 {
+  color: #2a9d8f;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.photos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+.photo {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(42,157,143,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.photo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 30px rgba(42,157,143,0.6);
+}
+
+.weather-info {
+  background: #d6f0ec;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 12px #a4d4cc;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.loader {
+  border: 5px solid #ccc;
+  border-top: 5px solid #2a9d8f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.city-description,
+.city-fun-facts {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #264653;
+  margin-bottom: 40px;
+}
+
+.city-fun-facts ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-top-btn:hover {
+  background: #1e5177;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .photos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo {
+    width: 90%;
+    height: auto;
+  }
+  .map-container {
+    margin: 40px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+}

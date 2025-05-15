@@ -1,0 +1,252 @@
+.my-future {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Світла тема */
+.my-future.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* Темна тема */
+.my-future.dark {
+  background-color: #121212;
+  color: #eeeeee;
+  box-shadow: 0 8px 20px rgba(255,255,255,0.05);
+}
+
+/* Перемикач теми */
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.theme-label {
+  font-size: 1rem;
+  user-select: none;
+}
+
+.my-future h1 {
+  font-size: 2.8rem;
+  color: inherit;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.icon-wrapper {
+  font-size: 3.5rem;
+  padding: 15px;
+  border-radius: 15px;
+  background: #d6eaf8;
+  color: #2a9d8f;
+  box-shadow: 0 6px 14px rgba(42,157,143,0.2);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.my-future.dark .icon-wrapper {
+  background: #222831;
+  color: #61dafb;
+}
+
+.react-icon {
+  background: #282c34;
+  color: #61dafb;
+}
+
+.laptop-icon {
+  background: #d5f5e3;
+  color: #27ae60;
+}
+
+.chart-icon {
+  background: #fcf3cf;
+  color: #f39c12;
+}
+
+.content h3 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+.content p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: inherit;
+  line-height: 1.5;
+}
+
+.motivation {
+  font-style: italic;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 40px 0 60px;
+  color: #1abc9c;
+  border-left: 6px solid #1abc9c;
+  padding-left: 15px;
+  box-shadow: 3px 3px 10px rgba(26,188,156,0.2);
+  user-select: none;
+}
+
+.my-future.dark .motivation {
+  color: #8ef9f3;
+  border-color: #8ef9f3;
+  box-shadow: 3px 3px 10px rgba(142,249,243,0.3);
+}
+
+.memes-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.meme-block {
+  background: #ffffffcc;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.my-future.dark .meme-block {
+  background: #1e1e1ecc;
+  box-shadow: 0 6px 12px rgba(255,255,255,0.05);
+}
+
+.meme-block:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.meme {
+  max-width: 100%;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.meme-caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.my-future.dark .meme-caption {
+  color: #ccc;
+}
+
+.dream-job {
+  font-size: 1.15rem;
+  color: inherit;
+  font-weight: 600;
+}
+
+.dream-job h2 {
+  color: #2a9d8f;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #2a9d8f;
+  padding-bottom: 6px;
+}
+
+.my-future.dark .dream-job h2 {
+  color: #8ef9f3;
+  border-color: #8ef9f3;
+}
+
+@media (max-width: 700px) {
+  .timeline {
+    gap: 25px;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .icon-wrapper {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  .memes-container {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .meme-block {
+    width: 90%;
+  }
+}

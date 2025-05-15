@@ -1,0 +1,48 @@
+/* Стилі для погоди */
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* Стилі для завантаження */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.loading p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff7f50;
+}
+
+/* Анімація для плавного відображення погодних даних */
+.weather-info {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
