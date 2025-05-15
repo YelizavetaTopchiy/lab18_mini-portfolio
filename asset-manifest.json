@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/lab18_mini-portfolio/static/css/main.29a9d048.css",
+    "main.js": "/lab18_mini-portfolio/static/js/main.26a39b27.js",
+    "static/media/me.jpg": "/lab18_mini-portfolio/static/media/me.9967590d41369a8fdeb3.jpg",
+    "index.html": "/lab18_mini-portfolio/index.html",
+    "main.29a9d048.css.map": "/lab18_mini-portfolio/static/css/main.29a9d048.css.map",
+    "main.26a39b27.js.map": "/lab18_mini-portfolio/static/js/main.26a39b27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29a9d048.css",
+    "static/js/main.26a39b27.js"
+  ]
+}
